@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Levels/Loading.unity
     guid: 52107526a6429ce47bd9980afcf1b462
+  - enabled: 1
+    path: Assets/Levels/CharSelect.unity
+    guid: cc9cdde7da113c445a44e790cb8f4f5b
   m_configObjects: {}
