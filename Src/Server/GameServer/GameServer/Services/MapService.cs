@@ -18,7 +18,10 @@ namespace GameServer.Services
         {
             //MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<MapCharacterEnterRequest>(this.OnMapCharacterEnter);
             MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<MapEntitySyncRequest>(this.OnMapEntitySync);
+            MessageDistributer<NetConnection<NetSession>>.Instance.Subscribe<MapTeleportRequest>(this.OnMapTeleport);
         }
+
+
 
         public void Init()
         {
@@ -44,9 +47,27 @@ namespace GameServer.Services
             conn.SendData(data, 0, data.Length);
         }
 
-        //private void OnMapCharacterEnter(NetConnection<NetSession> sender, MapCharacterEnterRequest message)
-        //{
-        //    throw new NotImplementedException();
-        //}
+        private void OnMapTeleport(NetConnection<NetSession> sender, MapTeleportRequest request)
+        {
+            Character character = sender.Session.Character;
+            Log.InfoFormat("MapTeleportRequest:CharacterID:{0}:{1} TeleporterID:{2}", character.Id, character.Data, request.teleporterId);
+
+            if (!DataManager.Instance.Teleporters.ContainsKey(request.teleporterId))
+            {
+                Log.WarningFormat("Source TeleporterID [{0}] not existed", request.teleporterId);
+                return;
+            }
+            TeleporterDefine source = DataManager.Instance.Teleporters[request.teleporterId];
+            if (source.LinkTo==0||!DataManager.Instance.Teleporters.ContainsKey(source.LinkTo))
+            {
+                Log.WarningFormat("Source TeleporterID [{0}] LikedTo ID {1} not existed", request.teleporterId, source.LinkTo);
+            }
+            TeleporterDefine target = DataManager.Instance.Teleporters[source.LinkTo];
+
+            MapManager.Instance[source.MapID].CharacterLeave(character);
+            character.Position = target.Position;
+            character.Direction = target.Direction;
+            MapManager.Instance[target.MapID].CharacterEnter(sender,character);
+        }
     }
 }

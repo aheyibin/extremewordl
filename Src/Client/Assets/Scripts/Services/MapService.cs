@@ -64,7 +64,9 @@ namespace Services
             }
 		}
 
-		private void EnterMap(int mapId)
+
+
+        private void EnterMap(int mapId)
 		{
 			if (DataManager.Instance.Maps.ContainsKey(mapId))
 			{
@@ -105,5 +107,15 @@ namespace Services
 			Debug.Log(sb.ToString());
 		}
 
+		internal void SendMapTeleporter(int id)
+		{
+			Debug.LogFormat("MapTeleportRequest：ID:{0}", id);
+			NetMessage message = new NetMessage();
+			message.Request = new NetMessageRequest();
+			message.Request.mapTeleport = new MapTeleportRequest();
+			message.Request.mapTeleport.teleporterId = id;
+
+			NetClient.Instance.SendMessage(message);
+		}
 	}
 }
