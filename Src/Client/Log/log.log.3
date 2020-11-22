@@ -1,15 +1,65 @@
-2020-11-02 16:39:17,194 [ 1] INFO  Unity: LoadingManager start
-2020-11-02 16:39:21,536 [ 1] INFO  Unity: DataManager > DataManager()
-2020-11-02 16:39:36,431 [ 1] INFO  Unity: UserLoginRequest::user :1102 psw:1102
-2020-11-02 16:39:36,433 [ 1] INFO  Unity: ConnectToServer() Start 
-2020-11-02 16:39:36,437 [ 1] INFO  Unity: DoConnect
-2020-11-02 16:39:36,439 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2020-11-02 16:39:36,444 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2020-11-22 19:14:11,892 [ 1] INFO  Unity: LoadingManager start
+2020-11-22 19:14:16,121 [ 1] INFO  Unity: DataManager > DataManager()
+2020-11-22 19:14:19,941 [ 1] INFO  Unity: UserLoginRequest::user :1122 psw:1122
+2020-11-22 19:14:19,942 [ 1] INFO  Unity: ConnectToServer() Start 
+2020-11-22 19:14:19,947 [ 1] INFO  Unity: DoConnect
+2020-11-22 19:14:19,949 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2020-11-22 19:14:19,954 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2020-11-02 16:39:36,449 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2020-11-02 16:39:46,294 [ 1] INFO  Unity: UserLoginRequest::user :1102 psw:1102
-2020-11-02 16:39:57,217 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2020-11-02 16:39:57,218 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2020-11-22 19:14:19,958 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2020-11-22 19:14:35,773 [ 1] INFO  Unity: ProcessReceive exception:System.Net.Sockets.SocketException: 远程主机强迫关闭了一个现有的连接。
+
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, Int32 offset, Int32 size, SocketFlags flags) [0x00000] in <filename unknown>:0 
+  at Network.NetClient.ProcessRecv () [0x00084] in E:\VipSkillGit\mmowork\Src\Client\Assets\Scripts\Network\NetClient.cs:340 
+
+2020-11-22 19:14:35,775 [ 1] WARN  Unity: CloseConnection(), errorCode: 1001
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
+Network.NetClient:ProcessRecv() (at Assets/Scripts/Network/NetClient.cs:354)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:434)
+
+2020-11-22 19:14:35,785 [ 1] INFO  Unity: DoConnect
+2020-11-22 19:14:35,786 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2020-11-22 19:14:35,787 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+
+2020-11-22 19:14:37,792 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:274)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
+
+2020-11-22 19:14:37,794 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
+
+  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:276)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
+
+2020-11-22 19:14:37,826 [ 1] INFO  Unity: DoConnect
+2020-11-22 19:14:37,826 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2020-11-22 19:14:37,828 [ 1] INFO  Unity: Connect[1] to server 127.0.0.1:8000
+
+2020-11-22 19:14:39,833 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2020-11-22 19:14:44,756 [ 1] INFO  Unity: UserLoginRequest::user :1122 psw:1122
+2020-11-22 19:14:47,698 [ 1] INFO  Unity: OnLogin:Success [None]
+2020-11-22 19:14:47,700 [ 1] INFO  Unity: 登录成功
+2020-11-22 19:14:47,701 [ 1] INFO  Unity: LoadLevel: CharSelect
+2020-11-22 19:14:47,849 [ 1] INFO  Unity: LevelLoadCompleted:1
+2020-11-22 19:14:47,851 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index, System.Collections.Generic.List`1[SkillBridge.Message.NCharacterInfo].get_Item (Int32 index) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/List.cs:633)
+UICharSelect.Start () (at Assets/Scripts/UI/UICharSelect.cs:38)
+}</args></log4net.Error>
+2020-11-22 19:15:00,909 [ 1] INFO  Unity: SendCreateRole::name :archer1 CharacterClass:Archer
+2020-11-22 19:15:01,305 [ 1] INFO  Unity: OnUserCreateCharacter:Success [None]
+2020-11-22 19:15:01,306 [ 1] INFO  Unity: 角色创建成功
+2020-11-22 19:16:31,653 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2020-11-22 19:16:31,653 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)

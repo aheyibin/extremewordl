@@ -899,7 +899,19 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 136692900881337864, guid: 516a923affb9f824bbbb7847e308d803,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 54631546591859274, guid: 516a923affb9f824bbbb7847e308d803,
+        type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114755001319944470, guid: 516a923affb9f824bbbb7847e308d803, type: 2}
+    - {fileID: 114658766731318382, guid: 516a923affb9f824bbbb7847e308d803, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 516a923affb9f824bbbb7847e308d803, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &587225247 stripped
@@ -1962,7 +1974,19 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 136377882317957242, guid: 5ee991163c3db674999f4dfbd161b3c0,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 54703517749550700, guid: 5ee991163c3db674999f4dfbd161b3c0,
+        type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114760752097447024, guid: 5ee991163c3db674999f4dfbd161b3c0, type: 2}
+    - {fileID: 114200337193486548, guid: 5ee991163c3db674999f4dfbd161b3c0, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 5ee991163c3db674999f4dfbd161b3c0, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &978877083 stripped
@@ -3213,7 +3237,19 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 136827231074461204, guid: 347bbdd663eaae944878f5012d895680,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 54140855661780278, guid: 347bbdd663eaae944878f5012d895680,
+        type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114104171928693330, guid: 347bbdd663eaae944878f5012d895680, type: 2}
+    - {fileID: 114556158859707036, guid: 347bbdd663eaae944878f5012d895680, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 347bbdd663eaae944878f5012d895680, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &1586842490 stripped
