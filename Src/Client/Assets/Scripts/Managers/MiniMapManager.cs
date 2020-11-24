@@ -3,22 +3,39 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MiniMapManager : Singleton<MiniMapManager> {
+namespace Managers
+{ 
+    class MiniMapManager : Singleton<MiniMapManager> {
 
-    public Transform PlayerTransform
-    {
-        get
+        public UIMinimap minimap;
+        private Collider minimapBoundBox;
+        public Collider MinimapBoundBox
         {
-            if (User.Instance.CurrentCharacterObject == null)
+            get { return minimapBoundBox; }
+        }
+        public Transform PlayerTransform
+        {
+            get
             {
-                return null;
+                if (User.Instance.CurrentCharacterObject == null)
+                {
+                    return null;
+                }
+                return User.Instance.CurrentCharacterObject.transform;
             }
-            return User.Instance.CurrentCharacterObject.transform;
+        }
+        public Sprite LoadCurrentMiniMap()
+        {
+            return Resloader.Load<Sprite>("UI/MiniMap/" + User.Instance.CurrentMapData.FileName);
+        }
+
+        public void UpdateMiniMap(Collider Minimapboundbox)
+        {
+            this.minimapBoundBox = Minimapboundbox;
+            if (this.minimap!=null)
+            {
+                this.minimap.UpdateMap();
+            }
         }
     }
-    public Sprite LoadCurrentMiniMap()
-    {
-        return Resloader.Load<Sprite>("UI/MiniMap/" + User.Instance.CurrentMapData.FileName);
-    }
-
 }

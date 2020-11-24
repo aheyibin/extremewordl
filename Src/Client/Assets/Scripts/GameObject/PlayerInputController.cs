@@ -51,6 +51,8 @@ public class PlayerInputController : MonoBehaviour {
         if (character == null)
             return;
 
+        //if (InputManager.Instance.IsInputMode) return;
+
         
         float v = Input.GetAxis("Vertical");
         if (v > 0.01)
@@ -117,8 +119,10 @@ public class PlayerInputController : MonoBehaviour {
         this.speed = (int)(offset.magnitude * 100f / Time.deltaTime);
         //Debug.LogFormat("LateUpdate velocity {0} : {1}", this.rb.velocity.magnitude, this.speed);
         this.lastPos = this.rb.transform.position;
-        
-        if ((GameObjectTool.WorldToLogic(this.rb.transform.position) - this.character.position).magnitude > 50)
+
+        Vector3Int goLogicPos = GameObjectTool.WorldToLogic(this.rb.transform.position);
+        float logicOffset = (goLogicPos - this.character.position).magnitude;
+        if (logicOffset > 100)
         {
             this.character.SetPosition(GameObjectTool.WorldToLogic(this.rb.transform.position));
             this.SendEntityEvent(EntityEvent.None);

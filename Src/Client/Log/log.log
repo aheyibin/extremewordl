@@ -1,18 +1,29 @@
-2020-11-22 21:17:30,054 [ 1] INFO  Unity: LoadingManager start
-2020-11-22 21:17:34,278 [ 1] INFO  Unity: DataManager > DataManager()
-2020-11-22 21:17:39,913 [ 1] INFO  Unity: UserLoginRequest::user :1122 psw:1122
-2020-11-22 21:17:39,915 [ 1] INFO  Unity: ConnectToServer() Start 
-2020-11-22 21:17:39,922 [ 1] INFO  Unity: DoConnect
-2020-11-22 21:17:39,924 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2020-11-22 21:17:39,931 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2020-11-24 16:28:57,778 [ 1] INFO  Unity: LoadingManager start
+2020-11-24 16:29:01,927 [ 1] INFO  Unity: DataManager > DataManager()
+2020-11-24 16:29:05,584 [ 1] INFO  Unity: UserLoginRequest::user :1124 psw:1124
+2020-11-24 16:29:05,586 [ 1] INFO  Unity: ConnectToServer() Start 
+2020-11-24 16:29:05,591 [ 1] INFO  Unity: DoConnect
+2020-11-24 16:29:05,593 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2020-11-24 16:29:05,598 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2020-11-22 21:17:39,937 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2020-11-22 21:17:40,084 [ 1] INFO  Unity: OnLogin:Success [None]
-2020-11-22 21:17:40,085 [ 1] INFO  Unity: 登录成功
-2020-11-22 21:17:40,087 [ 1] INFO  Unity: LoadLevel: CharSelect
-2020-11-22 21:17:40,362 [ 1] INFO  Unity: LevelLoadCompleted:1
-2020-11-22 21:21:43,368 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2020-11-22 21:21:43,370 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2020-11-24 16:29:05,602 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2020-11-24 16:29:05,726 [ 1] INFO  Unity: OnLogin:Success [None]
+2020-11-24 16:29:05,727 [ 1] INFO  Unity: 登录成功
+2020-11-24 16:29:05,728 [ 1] INFO  Unity: LoadLevel: CharSelect
+2020-11-24 16:29:05,878 [ 1] INFO  Unity: LevelLoadCompleted:1
+2020-11-24 16:29:07,631 [ 1] INFO  Unity: SendUserGameEnter::roleInex :1
+2020-11-24 16:29:07,653 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2020-11-24 16:29:07,654 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2020-11-24 16:29:07,656 [ 1] INFO  Unity: AddCharacter:8:wa1 Map:1 Entity:(8:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2020-11-24 16:29:07,660 [ 1] INFO  Unity: LoadLevel: MainCity
+2020-11-24 16:29:08,188 [ 1] WARN  Unity: No mesh data available for mesh Sphere001 on particle system fx_portal. Make sure Read/Write Enabled is set in the importer to work on the particle system renderer
+
+2020-11-24 16:29:08,188 [ 1] WARN  Unity: No mesh data available for mesh Sphere001 on particle system fx_portal. Make sure Read/Write Enabled is set in the importer to work on the particle system renderer
+
+2020-11-24 16:29:08,311 [ 1] INFO  Unity: LevelLoadCompleted:1
+2020-11-24 16:31:10,779 [ 1] INFO  Unity: Character_8_wa1 OnDestroy :ID:8 POS:(5000, 4000, 820) DIR:(100, 0, 0) SPD:0 
+2020-11-24 16:31:10,780 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2020-11-24 16:31:10,781 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)

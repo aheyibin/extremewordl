@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.Analytics;
 using UnityEngine.Experimental.PlayerLoop;
 using UnityEngine.UI;
+using Managers;
 
 public class UIMinimap : MonoBehaviour {
 
@@ -17,19 +18,18 @@ public class UIMinimap : MonoBehaviour {
 
     void Start()
     {
-        this.InitMap();
+        MiniMapManager.Instance.minimap = this;
+        this.UpdateMap();
     }
 
-    void InitMap ()
+    public void UpdateMap ()
     {
         this.miniMapName.text = User.Instance.CurrentMapData.Name;
-        if (this.minimap.overrideSprite==null)
-        {
-            this.minimap.overrideSprite = MiniMapManager.Instance.LoadCurrentMiniMap();
-        }
+        this.minimap.overrideSprite = MiniMapManager.Instance.LoadCurrentMiniMap();
         this.minimap.SetNativeSize();
         this.minimap.transform.localPosition = Vector3.zero;
-        //this.playerTransform = User.Instance.CurrentCharacterObject.transform;
+        this.minimapBoundingBox = MiniMapManager.Instance.MinimapBoundBox;
+        this.playerTransform = null;
     }   
 
     void Update()

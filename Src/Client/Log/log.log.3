@@ -1,66 +1,319 @@
-2020-11-22 19:14:11,892 [ 1] INFO  Unity: LoadingManager start
-2020-11-22 19:14:16,121 [ 1] INFO  Unity: DataManager > DataManager()
-2020-11-22 19:14:19,941 [ 1] INFO  Unity: UserLoginRequest::user :1122 psw:1122
-2020-11-22 19:14:19,942 [ 1] INFO  Unity: ConnectToServer() Start 
-2020-11-22 19:14:19,947 [ 1] INFO  Unity: DoConnect
-2020-11-22 19:14:19,949 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2020-11-22 19:14:19,954 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+2020-11-24 14:57:16,600 [ 1] INFO  Unity: LoadingManager start
+2020-11-24 14:57:20,865 [ 1] INFO  Unity: DataManager > DataManager()
+2020-11-24 14:57:26,445 [ 1] INFO  Unity: UserLoginRequest::user :1124 psw:1124
+2020-11-24 14:57:26,447 [ 1] INFO  Unity: ConnectToServer() Start 
+2020-11-24 14:57:26,452 [ 1] INFO  Unity: DoConnect
+2020-11-24 14:57:26,454 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2020-11-24 14:57:26,458 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
 
-2020-11-22 19:14:19,958 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2020-11-22 19:14:35,773 [ 1] INFO  Unity: ProcessReceive exception:System.Net.Sockets.SocketException: 远程主机强迫关闭了一个现有的连接。
+2020-11-24 14:57:26,462 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2020-11-24 14:57:26,577 [ 1] INFO  Unity: OnLogin:Success [None]
+2020-11-24 14:57:26,578 [ 1] INFO  Unity: 登录成功
+2020-11-24 14:57:26,579 [ 1] INFO  Unity: LoadLevel: CharSelect
+2020-11-24 14:57:26,744 [ 1] INFO  Unity: LevelLoadCompleted:1
+2020-11-24 14:57:50,624 [ 1] INFO  Unity: SendCreateRole::name :wa1 CharacterClass:Warrior
+2020-11-24 14:57:50,647 [ 1] INFO  Unity: OnUserCreateCharacter:Success [None]
+2020-11-24 14:57:50,648 [ 1] INFO  Unity: 角色创建成功
+2020-11-24 14:58:07,924 [ 1] INFO  Unity: SendCreateRole::name :wz1 CharacterClass:Wizard
+2020-11-24 14:58:07,942 [ 1] INFO  Unity: OnUserCreateCharacter:Success [None]
+2020-11-24 14:58:07,943 [ 1] INFO  Unity: 角色创建成功
+2020-11-24 14:58:11,100 [ 1] INFO  Unity: SendUserGameEnter::roleInex :0
+2020-11-24 14:58:11,124 [ 1] INFO  Unity: OnGameEnter:Success [None]
+2020-11-24 14:58:11,125 [ 1] INFO  Unity: OnMapCharacterEnter:Map:1 Count:1
+2020-11-24 14:58:11,127 [ 1] INFO  Unity: AddCharacter:4:a1 Map:1 Entity:(4:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2020-11-24 14:58:11,131 [ 1] INFO  Unity: LoadLevel: MainCity
+2020-11-24 14:58:11,652 [ 1] WARN  Unity: No mesh data available for mesh Sphere001 on particle system fx_portal. Make sure Read/Write Enabled is set in the importer to work on the particle system renderer
 
-  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, Int32 offset, Int32 size, SocketFlags flags) [0x00000] in <filename unknown>:0 
-  at Network.NetClient.ProcessRecv () [0x00084] in E:\VipSkillGit\mmowork\Src\Client\Assets\Scripts\Network\NetClient.cs:340 
+2020-11-24 14:58:11,652 [ 1] WARN  Unity: No mesh data available for mesh Sphere001 on particle system fx_portal. Make sure Read/Write Enabled is set in the importer to work on the particle system renderer
 
-2020-11-22 19:14:35,775 [ 1] WARN  Unity: CloseConnection(), errorCode: 1001
-UnityEngine.Debug:LogWarning(Object)
-Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
-Network.NetClient:ProcessRecv() (at Assets/Scripts/Network/NetClient.cs:354)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:434)
+2020-11-24 14:58:11,802 [ 1] INFO  Unity: LevelLoadCompleted:1
+2020-11-24 14:58:12,632 [ 1] INFO  Unity: SetDirection:(98, -18, 0)
+2020-11-24 14:58:12,633 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:58:12,728 [ 1] INFO  Unity: SetDirection:(93, -36, 0)
+2020-11-24 14:58:12,729 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:58:12,823 [ 1] INFO  Unity: SetDirection:(84, -54, 0)
+2020-11-24 14:58:12,824 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:58:12,914 [ 1] INFO  Unity: SetDirection:(73, -68, 0)
+2020-11-24 14:58:12,914 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:58:13,004 [ 1] INFO  Unity: SetDirection:(58, -82, 0)
+2020-11-24 14:58:13,005 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:58:13,095 [ 1] INFO  Unity: SetDirection:(43, -91, 0)
+2020-11-24 14:58:13,096 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:58:13,179 [ 1] INFO  Unity: SetDirection:(26, -97, 0)
+2020-11-24 14:58:13,179 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:58:13,248 [ 1] INFO  Unity: MoveForward
+2020-11-24 14:58:13,249 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:13,278 [ 1] INFO  Unity: SetDirection:(8, -100, 0)
+2020-11-24 14:58:13,279 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:13,478 [ 1] INFO  Unity: SetDirection:(-10, -100, 0)
+2020-11-24 14:58:13,479 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:15,302 [ 1] INFO  Unity: SetDirection:(-27, -96, 0)
+2020-11-24 14:58:15,302 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:15,393 [ 1] INFO  Unity: SetDirection:(-44, -90, 0)
+2020-11-24 14:58:15,394 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:15,476 [ 1] INFO  Unity: SetDirection:(-59, -81, 0)
+2020-11-24 14:58:15,477 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:15,588 [ 1] INFO  Unity: SetDirection:(-74, -67, 0)
+2020-11-24 14:58:15,588 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:15,711 [ 1] INFO  Unity: SetDirection:(-85, -53, 0)
+2020-11-24 14:58:15,711 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:20,560 [ 1] INFO  Unity: SetPosition:(3653, 2507, 800)
+2020-11-24 14:58:20,561 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:21,510 [ 1] INFO  Unity: SetDirection:(-73, -68, 0)
+2020-11-24 14:58:21,511 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:21,594 [ 1] INFO  Unity: Stop
+2020-11-24 14:58:21,595 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:58:21,610 [ 1] INFO  Unity: SetDirection:(-58, -81, 0)
+2020-11-24 14:58:21,610 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:58:21,692 [ 1] INFO  Unity: SetDirection:(-43, -90, 0)
+2020-11-24 14:58:21,692 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:58:21,795 [ 1] INFO  Unity: SetDirection:(-23, -97, 0)
+2020-11-24 14:58:21,796 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:58:21,888 [ 1] INFO  Unity: SetDirection:(-3, -100, 0)
+2020-11-24 14:58:21,889 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:58:21,983 [ 1] INFO  Unity: SetDirection:(15, -99, 0)
+2020-11-24 14:58:21,984 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:58:22,080 [ 1] INFO  Unity: SetDirection:(35, -94, 0)
+2020-11-24 14:58:22,081 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:58:22,175 [ 1] INFO  Unity: SetDirection:(54, -84, 0)
+2020-11-24 14:58:22,176 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:58:22,276 [ 1] INFO  Unity: SetDirection:(70, -71, 0)
+2020-11-24 14:58:22,277 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:58:22,372 [ 1] INFO  Unity: SetDirection:(83, -55, 0)
+2020-11-24 14:58:22,373 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:58:22,410 [ 1] INFO  Unity: MoveForward
+2020-11-24 14:58:22,410 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:22,484 [ 1] INFO  Unity: SetDirection:(93, -37, 0)
+2020-11-24 14:58:22,485 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:22,573 [ 1] INFO  Unity: SetDirection:(98, -19, 0)
+2020-11-24 14:58:22,573 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:22,768 [ 1] INFO  Unity: SetDirection:(100, -2, 0)
+2020-11-24 14:58:22,769 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:25,985 [ 1] INFO  Unity: SetDirection:(99, 16, 0)
+2020-11-24 14:58:25,986 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:32,937 [ 1] INFO  Unity: TeleporterObject: Character[a1] enter teleporter[4：出城传入点2]
+2020-11-24 14:58:33,277 [ 1] INFO  Unity: SetDirection:(100, -2, 0)
+2020-11-24 14:58:33,277 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:34,273 [ 1] INFO  Unity: SetPosition:(6932, 2628, 800)
+2020-11-24 14:58:34,273 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:35,186 [ 1] INFO  Unity: TeleporterObject: Character[a1] enter teleporter[1：主城->野外]
+2020-11-24 14:58:35,187 [ 1] INFO  Unity: MapTeleportRequest：ID:1
+2020-11-24 14:58:35,218 [ 1] INFO  Unity: OnMapCharacterLeave:characterId:4
+2020-11-24 14:58:35,221 [ 1] INFO  Unity: RemoveCharacter:4
+2020-11-24 14:58:35,223 [ 1] INFO  Unity: OnMapCharacterEnter:Map:2 Count:1
+2020-11-24 14:58:35,224 [ 1] INFO  Unity: AddCharacter:4:a1 Map:2 Entity:(4:pos:(2676,3969,57),dir:(100,1,0),spd:300
+2020-11-24 14:58:35,234 [ 1] INFO  Unity: LoadLevel: Map01
+2020-11-24 14:58:35,235 [ 1] INFO  Unity: Character_4_a1 OnDestroy :ID:4 POS:(7217, 2628, 800) DIR:(100, -2, 0) SPD:300 
+2020-11-24 14:58:35,537 [ 1] INFO  Unity: MoveForward
+2020-11-24 14:58:35,537 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:35,632 [ 1] WARN  Unity: No mesh data available for mesh Sphere001 on particle system fx_portal. Make sure Read/Write Enabled is set in the importer to work on the particle system renderer
 
-2020-11-22 19:14:35,785 [ 1] INFO  Unity: DoConnect
-2020-11-22 19:14:35,786 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2020-11-22 19:14:35,787 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
-
-2020-11-22 19:14:37,792 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
-UnityEngine.Debug:LogWarning(Object)
-Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
-Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:274)
-Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
-Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
-
-2020-11-22 19:14:37,794 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
-
-  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
-  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
-UnityEngine.Debug:LogErrorFormat(String, Object[])
-Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:276)
-Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
-Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
-Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
-
-2020-11-22 19:14:37,826 [ 1] INFO  Unity: DoConnect
-2020-11-22 19:14:37,826 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
-2020-11-22 19:14:37,828 [ 1] INFO  Unity: Connect[1] to server 127.0.0.1:8000
-
-2020-11-22 19:14:39,833 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
-2020-11-22 19:14:44,756 [ 1] INFO  Unity: UserLoginRequest::user :1122 psw:1122
-2020-11-22 19:14:47,698 [ 1] INFO  Unity: OnLogin:Success [None]
-2020-11-22 19:14:47,700 [ 1] INFO  Unity: 登录成功
-2020-11-22 19:14:47,701 [ 1] INFO  Unity: LoadLevel: CharSelect
-2020-11-22 19:14:47,849 [ 1] INFO  Unity: LevelLoadCompleted:1
-2020-11-22 19:14:47,851 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
-{1}</format><args>{ArgumentOutOfRangeException: Argument is out of range.
-Parameter name: index, System.Collections.Generic.List`1[SkillBridge.Message.NCharacterInfo].get_Item (Int32 index) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/List.cs:633)
-UICharSelect.Start () (at Assets/Scripts/UI/UICharSelect.cs:38)
-}</args></log4net.Error>
-2020-11-22 19:15:00,909 [ 1] INFO  Unity: SendCreateRole::name :archer1 CharacterClass:Archer
-2020-11-22 19:15:01,305 [ 1] INFO  Unity: OnUserCreateCharacter:Success [None]
-2020-11-22 19:15:01,306 [ 1] INFO  Unity: 角色创建成功
-2020-11-22 19:16:31,653 [ 1] INFO  Unity: OnDestroy NetworkManager.
-2020-11-22 19:16:31,653 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+2020-11-24 14:58:35,759 [ 1] INFO  Unity: LevelLoadCompleted:1
+2020-11-24 14:58:35,762 [ 1] INFO  Unity: Stop
+2020-11-24 14:58:35,763 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:58:35,765 [ 1] INFO  Unity: TeleporterObject: Character[a1] enter teleporter[6：野外传入点]
+2020-11-24 14:58:36,489 [ 1] INFO  Unity: MoveForward
+2020-11-24 14:58:36,490 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:36,573 [ 1] INFO  Unity: SetDirection:(98, -18, 0)
+2020-11-24 14:58:36,574 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:36,680 [ 1] INFO  Unity: SetDirection:(93, -36, 0)
+2020-11-24 14:58:36,681 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:36,780 [ 1] INFO  Unity: SetDirection:(86, -52, 0)
+2020-11-24 14:58:36,780 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:37,944 [ 1] INFO  Unity: SetDirection:(94, -34, 0)
+2020-11-24 14:58:37,944 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:38,041 [ 1] INFO  Unity: SetDirection:(99, -16, 0)
+2020-11-24 14:58:38,042 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:38,720 [ 1] INFO  Unity: SetDirection:(94, -33, 0)
+2020-11-24 14:58:38,721 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:40,575 [ 1] INFO  Unity: SetPosition:(3871, 3545, 0)
+2020-11-24 14:58:40,576 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:44,284 [ 1] INFO  Unity: SetPosition:(4916, 3178, 0)
+2020-11-24 14:58:44,284 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:45,309 [ 1] INFO  Unity: SetDirection:(86, -50, 0)
+2020-11-24 14:58:45,310 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:45,492 [ 1] INFO  Unity: SetDirection:(76, -65, 0)
+2020-11-24 14:58:45,493 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:46,327 [ 1] INFO  Unity: SetDirection:(86, -50, 0)
+2020-11-24 14:58:46,328 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:46,426 [ 1] INFO  Unity: SetDirection:(94, -34, 0)
+2020-11-24 14:58:46,427 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:46,503 [ 1] INFO  Unity: SetDirection:(99, -17, 0)
+2020-11-24 14:58:46,504 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:46,607 [ 1] INFO  Unity: SetDirection:(100, 2, 0)
+2020-11-24 14:58:46,607 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:46,775 [ 1] INFO  Unity: SetDirection:(98, 20, 0)
+2020-11-24 14:58:46,776 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:47,055 [ 1] INFO  Unity: SetDirection:(100, 1, 0)
+2020-11-24 14:58:47,056 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:47,158 [ 1] INFO  Unity: SetDirection:(98, -17, 0)
+2020-11-24 14:58:47,158 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:47,257 [ 1] INFO  Unity: SetDirection:(93, -37, 0)
+2020-11-24 14:58:47,258 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:47,389 [ 1] INFO  Unity: SetDirection:(84, -53, 0)
+2020-11-24 14:58:47,390 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:49,097 [ 1] INFO  Unity: SetDirection:(93, -38, 0)
+2020-11-24 14:58:49,098 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:49,193 [ 1] INFO  Unity: SetDirection:(98, -18, 0)
+2020-11-24 14:58:49,193 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:49,293 [ 1] INFO  Unity: SetDirection:(100, 3, 0)
+2020-11-24 14:58:49,294 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:49,396 [ 1] INFO  Unity: SetDirection:(97, 23, 0)
+2020-11-24 14:58:49,397 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:49,478 [ 1] INFO  Unity: SetDirection:(92, 40, 0)
+2020-11-24 14:58:49,479 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:49,565 [ 1] INFO  Unity: SetDirection:(83, 55, 0)
+2020-11-24 14:58:49,565 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:49,660 [ 1] INFO  Unity: SetDirection:(70, 71, 0)
+2020-11-24 14:58:49,660 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:49,748 [ 1] INFO  Unity: SetDirection:(57, 82, 0)
+2020-11-24 14:58:49,748 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:49,827 [ 1] INFO  Unity: SetDirection:(41, 91, 0)
+2020-11-24 14:58:49,828 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:49,929 [ 1] INFO  Unity: SetDirection:(22, 98, 0)
+2020-11-24 14:58:49,930 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:50,038 [ 1] INFO  Unity: SetDirection:(3, 100, 0)
+2020-11-24 14:58:50,038 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:50,196 [ 1] INFO  Unity: SetDirection:(-15, 99, 0)
+2020-11-24 14:58:50,197 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:51,170 [ 1] INFO  Unity: SetDirection:(5, 100, 0)
+2020-11-24 14:58:51,171 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:51,298 [ 1] INFO  Unity: SetDirection:(22, 97, 0)
+2020-11-24 14:58:51,298 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:52,231 [ 1] INFO  Unity: SetDirection:(40, 91, 0)
+2020-11-24 14:58:52,232 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:52,352 [ 1] INFO  Unity: Stop
+2020-11-24 14:58:52,352 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:58:52,353 [ 1] INFO  Unity: SetDirection:(57, 82, 0)
+2020-11-24 14:58:52,354 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:58:52,439 [ 1] INFO  Unity: SetDirection:(71, 71, 0)
+2020-11-24 14:58:52,440 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:58:52,535 [ 1] INFO  Unity: SetDirection:(84, 55, 0)
+2020-11-24 14:58:52,535 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:58:52,624 [ 1] INFO  Unity: SetDirection:(92, 39, 0)
+2020-11-24 14:58:52,624 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:58:52,718 [ 1] INFO  Unity: SetDirection:(98, 19, 0)
+2020-11-24 14:58:52,718 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:58:52,820 [ 1] INFO  Unity: SetDirection:(100, -2, 0)
+2020-11-24 14:58:52,820 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:58:52,920 [ 1] INFO  Unity: SetDirection:(97, -22, 0)
+2020-11-24 14:58:52,921 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:58:53,004 [ 1] INFO  Unity: SetDirection:(92, -39, 0)
+2020-11-24 14:58:53,004 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:58:53,101 [ 1] INFO  Unity: SetDirection:(82, -57, 0)
+2020-11-24 14:58:53,102 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:58:53,187 [ 1] INFO  Unity: SetDirection:(71, -71, 0)
+2020-11-24 14:58:53,188 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:58:53,298 [ 1] INFO  Unity: MoveForward
+2020-11-24 14:58:53,298 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:53,299 [ 1] INFO  Unity: SetDirection:(55, -84, 0)
+2020-11-24 14:58:53,300 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:53,373 [ 1] INFO  Unity: SetDirection:(39, -92, 0)
+2020-11-24 14:58:53,373 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:53,470 [ 1] INFO  Unity: SetDirection:(19, -98, 0)
+2020-11-24 14:58:53,470 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:53,569 [ 1] INFO  Unity: SetDirection:(1, -100, 0)
+2020-11-24 14:58:53,570 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:53,754 [ 1] INFO  Unity: SetDirection:(-17, -99, 0)
+2020-11-24 14:58:53,754 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:54,172 [ 1] INFO  Unity: SetDirection:(2, -100, 0)
+2020-11-24 14:58:54,173 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:56,665 [ 1] INFO  Unity: SetDirection:(20, -98, 0)
+2020-11-24 14:58:56,666 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:56,841 [ 1] INFO  Unity: SetDirection:(39, -92, 0)
+2020-11-24 14:58:56,841 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:56,990 [ 1] INFO  Unity: SetDirection:(55, -84, 0)
+2020-11-24 14:58:56,991 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:57,062 [ 1] INFO  Unity: SetPosition:(6473, 2316, 9)
+2020-11-24 14:58:57,063 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:57,686 [ 1] INFO  Unity: Stop
+2020-11-24 14:58:57,686 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:58:57,699 [ 1] INFO  Unity: MoveBack
+2020-11-24 14:58:57,700 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:-300
+2020-11-24 14:58:58,183 [ 1] INFO  Unity: Stop
+2020-11-24 14:58:58,184 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:58:58,466 [ 1] INFO  Unity: MoveForward
+2020-11-24 14:58:58,467 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:58,620 [ 1] INFO  Unity: Stop
+2020-11-24 14:58:58,621 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:58:59,405 [ 1] INFO  Unity: SetDirection:(69, -72, 0)
+2020-11-24 14:58:59,406 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:58:59,500 [ 1] INFO  Unity: SetDirection:(81, -59, 0)
+2020-11-24 14:58:59,501 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:58:59,598 [ 1] INFO  Unity: SetDirection:(91, -41, 0)
+2020-11-24 14:58:59,599 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:58:59,683 [ 1] INFO  Unity: SetDirection:(97, -24, 0)
+2020-11-24 14:58:59,684 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:58:59,772 [ 1] INFO  Unity: MoveForward
+2020-11-24 14:58:59,773 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:59,785 [ 1] INFO  Unity: SetDirection:(100, -4, 0)
+2020-11-24 14:58:59,786 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:59,873 [ 1] INFO  Unity: SetDirection:(99, 14, 0)
+2020-11-24 14:58:59,873 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:58:59,972 [ 1] INFO  Unity: SetDirection:(94, 34, 0)
+2020-11-24 14:58:59,972 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:59:00,063 [ 1] INFO  Unity: SetDirection:(85, 53, 0)
+2020-11-24 14:59:00,064 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:59:00,165 [ 1] INFO  Unity: SetDirection:(72, 69, 0)
+2020-11-24 14:59:00,165 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:59:00,247 [ 1] INFO  Unity: SetDirection:(59, 81, 0)
+2020-11-24 14:59:00,247 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:59:00,348 [ 1] INFO  Unity: SetDirection:(42, 91, 0)
+2020-11-24 14:59:00,349 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:59:00,486 [ 1] INFO  Unity: SetDirection:(25, 97, 0)
+2020-11-24 14:59:00,487 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:59:00,521 [ 1] INFO  Unity: Stop
+2020-11-24 14:59:00,522 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:59:01,257 [ 1] INFO  Unity: SetDirection:(6, 100, 0)
+2020-11-24 14:59:01,257 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:59:01,367 [ 1] INFO  Unity: SetDirection:(-13, 99, 0)
+2020-11-24 14:59:01,368 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:59:01,458 [ 1] INFO  Unity: SetDirection:(-30, 95, 0)
+2020-11-24 14:59:01,459 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:59:01,505 [ 1] INFO  Unity: MoveForward
+2020-11-24 14:59:01,505 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:59:01,540 [ 1] INFO  Unity: SetDirection:(-46, 89, 0)
+2020-11-24 14:59:01,541 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:59:01,623 [ 1] INFO  Unity: SetDirection:(-61, 79, 0)
+2020-11-24 14:59:01,624 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:59:01,723 [ 1] INFO  Unity: SetDirection:(-76, 65, 0)
+2020-11-24 14:59:01,724 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:59:01,807 [ 1] INFO  Unity: SetDirection:(-86, 51, 0)
+2020-11-24 14:59:01,808 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:59:01,908 [ 1] INFO  Unity: SetDirection:(-94, 34, 0)
+2020-11-24 14:59:01,909 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:59:02,073 [ 1] INFO  Unity: SetDirection:(-99, 17, 0)
+2020-11-24 14:59:02,074 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:59:02,660 [ 1] INFO  Unity: Stop
+2020-11-24 14:59:02,661 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:59:02,727 [ 1] INFO  Unity: MoveBack
+2020-11-24 14:59:02,728 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:-300
+2020-11-24 14:59:02,972 [ 1] INFO  Unity: Stop
+2020-11-24 14:59:02,972 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:59:03,606 [ 1] INFO  Unity: SetDirection:(-93, 36, 0)
+2020-11-24 14:59:03,606 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:59:03,707 [ 1] INFO  Unity: SetDirection:(-84, 54, 0)
+2020-11-24 14:59:03,708 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:59:03,804 [ 1] INFO  Unity: SetDirection:(-71, 70, 0)
+2020-11-24 14:59:03,805 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:59:03,911 [ 1] INFO  Unity: SetDirection:(-55, 83, 0)
+2020-11-24 14:59:03,912 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:59:04,004 [ 1] INFO  Unity: SetDirection:(-39, 92, 0)
+2020-11-24 14:59:04,005 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:59:04,188 [ 1] INFO  Unity: SetDirection:(-22, 97, 0)
+2020-11-24 14:59:04,189 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:59:04,647 [ 1] INFO  Unity: MoveForward
+2020-11-24 14:59:04,647 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:300
+2020-11-24 14:59:04,897 [ 1] INFO  Unity: Stop
+2020-11-24 14:59:04,907 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:59:04,974 [ 1] INFO  Unity: MoveBack
+2020-11-24 14:59:04,975 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:-300
+2020-11-24 14:59:05,262 [ 1] INFO  Unity: Stop
+2020-11-24 14:59:05,263 [ 1] INFO  Unity: SendMapEntitySync:ID:4 Pos:SkillBridge.Message.NVector3 Dir:SkillBridge.Message.NVector3 Spd:0
+2020-11-24 14:59:11,316 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2020-11-24 14:59:11,317 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
 UnityEngine.Debug:LogWarning(Object)
 Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
 Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
 
+2020-11-24 14:59:11,320 [ 1] INFO  Unity: Character_4_a1 OnDestroy :ID:4 POS:(6467, 2493, 9) DIR:(-22, 97, 0) SPD:0 
