@@ -21,5 +21,12 @@ namespace GameServer.Services
         {
             entities = new ExtremeWorldEntities();
         }
+
+        //float time = 0;
+        public void Save()
+        {
+            //if(DateTime.Now.Ticks - time > 20f) 
+            entities.SaveChangesAsync();
+        }
     }
 }

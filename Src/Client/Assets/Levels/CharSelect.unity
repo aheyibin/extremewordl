@@ -428,7 +428,6 @@ GameObject:
   - component: {fileID: 282200867}
   - component: {fileID: 282200869}
   - component: {fileID: 282200868}
-  - component: {fileID: 282200870}
   m_Layer: 5
   m_Name: Panel_Select
   m_TagString: Untagged
@@ -451,7 +450,7 @@ RectTransform:
   - {fileID: 566719157}
   - {fileID: 1562207225}
   m_Father: {fileID: 601592115}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -492,34 +491,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 282200866}
   m_CullTransparentMesh: 0
---- !u!114 &282200870
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 282200866}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad16be0f04eb34547a022d5e174097f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roles:
-  - {fileID: 587225247}
-  - {fileID: 978877083}
-  - {fileID: 1586842490}
-  titles:
-  - {fileID: 1150021114}
-  - {fileID: 660262197}
-  - {fileID: 179011592}
-  mDescription: {fileID: 1299889570}
-  roleName: {fileID: 986145448}
-  panelCreate: {fileID: 1475842234}
-  panelSelect: {fileID: 282200866}
-  uiCharPrefab: {fileID: 1342910922017646, guid: f4877714ba9d0264b88281543bc87c57,
-    type: 2}
-  uiCharList: {fileID: 1597833453}
-  uiChars: []
-  roleIndex: 0
 --- !u!1 &332405694
 GameObject:
   m_ObjectHideFlags: 0
@@ -597,7 +568,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 282200870}
+      - m_Target: {fileID: 601592116}
         m_MethodName: set_CurrentIndex
         m_Mode: 3
         m_Arguments:
@@ -809,7 +780,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 282200870}
+      - m_Target: {fileID: 601592116}
         m_MethodName: OnClickNewUser
         m_Mode: 1
         m_Arguments:
@@ -930,6 +901,7 @@ GameObject:
   - component: {fileID: 601592114}
   - component: {fileID: 601592113}
   - component: {fileID: 601592112}
+  - component: {fileID: 601592116}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1005,8 +977,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 658553092}
-  - {fileID: 1475842235}
   - {fileID: 282200867}
+  - {fileID: 1475842235}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1015,6 +987,34 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &601592116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 601592111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad16be0f04eb34547a022d5e174097f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roles:
+  - {fileID: 587225247}
+  - {fileID: 978877083}
+  - {fileID: 1586842490}
+  titles:
+  - {fileID: 1150021114}
+  - {fileID: 660262197}
+  - {fileID: 179011592}
+  mDescription: {fileID: 1299889570}
+  roleName: {fileID: 986145448}
+  panelCreate: {fileID: 1475842234}
+  panelSelect: {fileID: 282200866}
+  uiCharPrefab: {fileID: 1342910922017646, guid: f4877714ba9d0264b88281543bc87c57,
+    type: 2}
+  uiCharList: {fileID: 1597833453}
+  uiChars: []
+  roleIndex: 0
 --- !u!1 &658553091
 GameObject:
   m_ObjectHideFlags: 0
@@ -1642,7 +1642,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 282200870}
+      - m_Target: {fileID: 601592116}
         m_MethodName: OnClickCreate
         m_Mode: 1
         m_Arguments:
@@ -1853,7 +1853,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 282200870}
+      - m_Target: {fileID: 601592116}
         m_MethodName: set_CurrentIndex
         m_Mode: 3
         m_Arguments:
@@ -2278,7 +2278,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 282200870}
+      - m_Target: {fileID: 601592116}
         m_MethodName: set_CurrentIndex
         m_Mode: 3
         m_Arguments:
@@ -2898,7 +2898,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 282200870}
+      - m_Target: {fileID: 601592116}
         m_MethodName: ReturnLogin
         m_Mode: 1
         m_Arguments:
@@ -3031,7 +3031,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1475842235
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3049,7 +3049,7 @@ RectTransform:
   - {fileID: 848715823}
   - {fileID: 986145447}
   m_Father: {fileID: 601592115}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3513,7 +3513,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 282200870}
+      - m_Target: {fileID: 601592116}
         m_MethodName: OnClickEnter
         m_Mode: 1
         m_Arguments:
@@ -3703,7 +3703,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1922512198}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 601592116}
+        m_MethodName: ReturnSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1922512198

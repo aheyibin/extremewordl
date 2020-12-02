@@ -18,7 +18,6 @@ namespace GameServer.Entities
 
 
         private Vector3Int position;
-
         public Vector3Int Position
         {
             get { return position; }
