@@ -19,7 +19,7 @@ public class UICharInfo : MonoBehaviour {
             //this.charClass.text = this.info.Class.ToString();
             this.charName.text = this.info.Name;
             this.charLevel.text = this.info.Level.ToString();
-            tid = this.info.Tid;
+            tid = this.info.ConfigId;
         }
     }
 }

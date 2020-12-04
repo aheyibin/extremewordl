@@ -45,4 +45,11 @@ class UIMain : MonoSingleton<UIMain> {
         bag.transform.localPosition = Vector3.zero;
         bag.OnReset();
     }
+
+    public void OnclickFriend()
+    {
+        var friend = UIManager.Instance.Show<UIFriend>();
+        friend.transform.SetParent(this.transform);
+        friend.transform.localPosition = Vector3.zero;
+    }
 }

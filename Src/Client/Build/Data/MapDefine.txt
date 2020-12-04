@@ -6,7 +6,8 @@
     "SubType": "Normal",
     "PKMode": false,
     "Resource": "MainCity",
-    "FileName": "buluzheng"
+    "FileName": "buluzheng",
+    "Description": "1"
   },
   "2": {
     "ID": 2,
@@ -15,7 +16,8 @@
     "SubType": "Normal",
     "PKMode": false,
     "Resource": "Map01",
-    "FileName": "luorisenl"
+    "FileName": "luorisenl",
+    "Description": "2"
   },
   "3": {
     "ID": 3,
@@ -24,7 +26,8 @@
     "SubType": "Normal",
     "PKMode": false,
     "Resource": "Map02",
-    "FileName": "luorisenl"
+    "FileName": "luorisenl",
+    "Description": "3"
   },
   "4": {
     "ID": 4,
@@ -33,6 +36,7 @@
     "SubType": "Normal",
     "PKMode": false,
     "Resource": "Map03",
-    "FileName": "luoriyuhui"
+    "FileName": "luoriyuhui",
+    "Description": "4"
   }
 }

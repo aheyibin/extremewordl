@@ -11,11 +11,22 @@ namespace GameServer.Entities
 {
     class Entity
     {
+        public Entity(Vector3Int pos, Vector3Int dir)
+        {
+            this.entityData = new NEntity();
+            this.entityData.Position = pos;
+            this.entityData.Direction = dir;
+            this.SetEntityData(this.entityData);
+        }
+        public Entity(NEntity entity)
+        {
+            this.entityData = entity;
+        }
+
         public int entityId
         {
             get { return this.entityData.Id; }
         }
-
 
         private Vector3Int position;
         public Vector3Int Position
@@ -63,18 +74,7 @@ namespace GameServer.Entities
             }
         }
 
-        public Entity(Vector3Int pos,Vector3Int dir)
-        {
-            this.entityData = new NEntity();
-            this.entityData.Position = pos;
-            this.entityData.Direction = dir;
-            this.SetEntityData(this.entityData);
-        }
 
-        public Entity(NEntity entity)
-        {
-            this.entityData = entity;
-        }
 
         public void SetEntityData(NEntity entity)
         {

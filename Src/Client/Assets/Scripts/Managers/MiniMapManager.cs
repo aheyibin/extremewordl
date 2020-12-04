@@ -26,7 +26,7 @@ namespace Managers
         }
         public Sprite LoadCurrentMiniMap()
         {
-            return Resloader.Load<Sprite>("UI/MiniMap/" + User.Instance.CurrentMapData.FileName);
+            return Resloader.Load<Sprite>("UI/MiniMap/" + User.Instance.CurrentMapData.Resource);
         }
 
         public void UpdateMiniMap(Collider Minimapboundbox)

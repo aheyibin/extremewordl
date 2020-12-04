@@ -59,8 +59,6 @@ namespace Services
             NetClient.Instance.Init("127.0.0.1", 8000);
             NetClient.Instance.Connect();
         }
-
-
         void OnGameServerConnect(int result, string reason)
         {
             Log.InfoFormat("LoadingMesager::OnGameServerConnect :{0} reason:{1}", result, reason);
@@ -81,13 +79,11 @@ namespace Services
                 }
             }
         }
-
         public void OnGameServerDisconnect(int result, string reason)
         {
             this.DisconnectNotify(result, reason);
             return;
         }
-
         bool DisconnectNotify(int result,string reason)
         {
             if (this.pendingMessage != null)
@@ -117,7 +113,7 @@ namespace Services
             }
             return false;
         }
-
+  
         public void SendLogin(string user, string psw)
         {
             Debug.LogFormat("UserLoginRequest::user :{0} psw:{1}", user, psw);
@@ -138,7 +134,6 @@ namespace Services
                 this.ConnectToServer();
             }
         }
-
         void OnUserLogin(object sender, UserLoginResponse response)
         {
             Debug.LogFormat("OnLogin:{0} [{1}]", response.Result, response.Errormsg);
@@ -153,7 +148,6 @@ namespace Services
 
             }
         }
-
         public void SendRegister(string user, string psw)
         {
             Debug.LogFormat("UserRegisterRequest::user :{0} psw:{1}", user, psw);
@@ -174,7 +168,6 @@ namespace Services
                 this.ConnectToServer();
             }
         }
-
         void OnUserRegister(object sender, UserRegisterResponse response)
         {
             Debug.LogFormat("OnUserRegister:{0} [{1}]", response.Result, response.Errormsg);
@@ -205,9 +198,6 @@ namespace Services
                 this.ConnectToServer();
             }
         }
-
-
-
         void OnUserCreateCharacter(object sender, UserCreateCharacterResponse response)
         {
             Debug.LogFormat("OnUserCreateCharacter:{0} [{1}]", response.Result, response.Errormsg);
@@ -217,7 +207,6 @@ namespace Services
                 this.OnRoleCreate(response.Result, response.Errormsg);
             }
         }
-
         public void SendUserGameEnter(int roleIndex)
         {
             Debug.LogFormat("SendUserGameEnter::roleInex :{0}", roleIndex);
@@ -237,7 +226,6 @@ namespace Services
                 this.ConnectToServer();
             }
         }
-
         private void OnGameEnter(object sender, UserGameEnterResponse response)
         {
             Debug.LogFormat("OnGameEnter:{0} [{1}]", response.Result, response.Errormsg);
@@ -245,10 +233,11 @@ namespace Services
             {
                 if (response.Character!=null)
                 {
+                    User.Instance.CurrentCharacter = response.Character;
                     ItemManager.Instance.Init(response.Character.Items);
                     BagManager.Instance.Init(response.Character.Bag);
+                    FriendManager.Instance.Init(response.Character.Firends);
                 }
-                User.Instance.CurrentCharacter = response.Character;
             }
         }
         public void SendUserGameLeave()
