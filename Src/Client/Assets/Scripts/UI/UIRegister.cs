@@ -17,10 +17,6 @@ public class UIRegister : MonoBehaviour {
 		UserService.Instance.OnRegister += OnRegister;
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
 	public void OnClickRegister()
     {

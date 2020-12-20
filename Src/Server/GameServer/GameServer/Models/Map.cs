@@ -109,7 +109,7 @@ namespace GameServer.Models
         {
             foreach (var kv in this.MapCharacters)
             {
-                if (kv.Value.character.entityId==entitySync.Id)
+                if (kv.Value.character.entityId==entitySync.Id) //如果是自己更新自己位置
                 {
                     kv.Value.character.Position = entitySync.Entity.Position;
                     kv.Value.character.Direction = entitySync.Entity.Direction;
@@ -117,7 +117,7 @@ namespace GameServer.Models
                 }
                 else
                 {
-                    MapService.Instance.SendEntityUpdate(kv.Value.connection, entitySync);
+                    MapService.Instance.SendEntityUpdate(kv.Value.connection, entitySync); //不是自己 发回给客户端
                 }
             }
         }

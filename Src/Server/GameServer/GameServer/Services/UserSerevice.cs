@@ -154,6 +154,7 @@ namespace GameServer.Services
             info.Type = CharacterType.Player;
             info.Class = (CharacterClass)character.Class;
             info.ConfigId = character.TID;
+            //???? info.Bag = character.Bag;
             //info.mapId = character.MapID;
             //info.Level = 1;
             sender.Session.Response.createChar.Characters.Add(info);

@@ -27,7 +27,7 @@ namespace GameServer.Services
         {
             Character character = sender.Session.Character;
             Log.InfoFormat("OnItemBuy::character:{0}:Shop:{1} ShopItem:{2}", character.Id, request.shopId, request.shopItemId);
-            var result = ShopManager.Instance.BuyItem(sender, request.shopItemId, request.shopItemId);
+            var result = ShopManager.Instance.BuyItem(sender, request.shopId, request.shopItemId);
             sender.Session.Response.itemBuy = new ItemBuyResponse();
             sender.Session.Response.itemBuy.Result = result;
             sender.SendResponse();

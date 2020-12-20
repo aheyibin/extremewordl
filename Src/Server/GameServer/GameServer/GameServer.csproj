@@ -137,7 +137,6 @@
     <Compile Include="Services\BagService.cs" />
     <Compile Include="Services\DBService.cs" />
     <Compile Include="Services\FriendService.cs" />
-    <Compile Include="Services\HelloWorldService.cs" />
     <Compile Include="Services\ItemService.cs" />
     <Compile Include="Services\MapService.cs" />
     <Compile Include="Services\UserSerevice.cs" />
@@ -161,6 +160,7 @@
     <Compile Include="TUser.cs">
       <DependentUpon>Entities.tt</DependentUpon>
     </Compile>
+    <Compile Include="Utils\temp.cs" />
     <Compile Include="Utils\Time.cs" />
   </ItemGroup>
   <ItemGroup>

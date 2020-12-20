@@ -90,6 +90,7 @@ namespace Services
 				Event = entityEvent,
 				Entity = entity
 			};
+            Debug.Log(message.Request.mapEntitySync.entitySync.Entity.Speed);
 			NetClient.Instance.SendMessage(message);
 		}
 
