@@ -56,3 +56,8 @@ ipch/
 *.vsp
 *.vspx
 
+/Src/Client/Assets/_TerrainAutoUpgrade
+/Src/Client/Assets/_TerrainAutoUpgrade.meta
+/Src/Client/.idea
+/Src/Client/Logs
+/Src/Server/GameServer/.idea
